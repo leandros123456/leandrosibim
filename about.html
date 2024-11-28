@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <title>Leandro Sibim</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font: bold 14px/1.4 "Times New Roman";
+            background: #000;
+            color: white;
+        }
+
+        nav {
+            background-color: black;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            width: 600px;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            display: inline-block;
+            padding: 15px 20px;
+        }
+
+        nav li {
+            display: table-cell;
+            position: relative;
+            padding: 15px 0;
+        }
+
+        nav a:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: #fff;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+
+        nav a:hover:after {
+            width: 100%;
+            left: 0;
+        }
+
+        @media screen and (max-height: 300px) {
+            ul {
+                margin-top: 40px;
+            }
+        }
+
+        .banner {
+            display: flex;
+            flex-direction: row;
+            background-image: url('https://wallpapercave.com/wp/wp4850097.jpg');
+            background-size: cover;
+        }
+
+        .banner div h2,
+        h5 {
+            color: white;
+        }
+
+        .banner div {
+            flex-grow: 3;
+            display: flex;
+            flex-direction: column;
+            width: 350vh;
+        }
+
+        span {
+            color: white;
+        }
+
+        .showcase-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 300px;
+            margin: 20px;
+            background-color: black;
+            border-radius: 10px;
+            border: 5px solid white;
+            text-align: center;
+        }
+
+        .showcase-box h3 {
+            text-align: center;
+        }
+
+        #projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .showcase-box span {
+            text-align: justify;
+        }
+
+        #contact ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        section ul li a {
+            color: white;
+            font-size: 10rem;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#tools">Ferramentas utilizadas</a></li>
+            <li><a href="#section2">Projetos desenvolvidos</a></li>
+            <li><a href="contact.html">Contato</a></li>
+            <li><a href="services.html">Serviços</a></li>
+            <li><a href="about.html">Sobre nós</a></li>
+        </ul>
+        <p>
+            Leandro Sibim: Inovação em Programação Backend e Soluções Científicas<br>
+            <br>
+            A Leandro Sibim é uma empresa inovadora no setor de tecnologia, com uma especialização dupla e uma visão de
+            longo prazo para transformar as indústrias através de soluções robustas em programação backend e avanços
+            científicos. Fundada por um grupo de engenheiros e cientistas apaixonados por desafios tecnológicos e
+            científicos, a empresa tem se consolidado como um dos principais players no desenvolvimento de plataformas
+            de software complexas e no apoio à pesquisa científica de ponta.<br>
+            <br>
+            A Missão da Leandro Sibim<br>
+            <br>
+            A missão da Leandro Sibim é simples, mas poderosa: fornecer soluções digitais e científicas de alta
+            performance que atendam às necessidades específicas de empresas e instituições de pesquisa. Com um time
+            multidisciplinar de profissionais altamente qualificados, a empresa se posiciona na vanguarda da
+            transformação digital, utilizando a mais recente tecnologia para resolver problemas de infraestrutura e
+            análise de dados em grande escala, ao mesmo tempo que contribui para avanços científicos essenciais para
+            diversas áreas do conhecimento.<br>
+            <br>
+            Expertise em Programação Backend<br>
+            <br>
+            A área de programação backend da Leandro Sibim é um dos pilares que sustenta o sucesso da empresa. Com uma
+            equipe de desenvolvedores experientes, a empresa oferece soluções personalizadas para empresas de diferentes
+            segmentos, incluindo fintechs, healthtechs, empresas de telecomunicações e até startups focadas em
+            inteligência artificial.<br>
+            <br>
+            Infraestrutura Escalável e de Alta Performance<br>
+            <br>
+            A Leandro Sibim desenvolve infraestruturas backend escaláveis, capazes de suportar um grande volume de
+            transações e dados de forma eficiente. Usando as tecnologias mais avançadas, como Docker, Kubernetes,
+            Microservices e Serverless, a empresa cria plataformas que são flexíveis, de fácil manutenção e altamente
+            resilientes. O foco está sempre em garantir que os sistemas funcionem de maneira eficiente, mesmo quando
+            escalados para milhões de usuários ou grandes volumes de dados.<br>
+            <br>
+            Integração e Automação de Sistemas<br>
+            <br>
+            A integração de sistemas legados com novas soluções tecnológicas é um dos maiores desafios das empresas
+            atuais. A Leandro Sibim se destaca na criação de soluções de integração de sistemas, desenvolvendo APIs e
+            serviços de middleware que permitem que diferentes plataformas se comuniquem de maneira fluida e eficaz. A
+            automação de processos, seja para tarefas internas de uma organização ou para fluxos de dados externos,
+            também é um campo em que a empresa brilha, utilizando tecnologias como APIs RESTful, GraphQL e Apache Kafka
+            para garantir que os dados fluam sem interrupções e que os processos sejam executados de forma ágil e
+            segura.<br>
+            <br>
+            Desenvolvimento de Soluções Científicas<br>
+            <br>
+            Além de suas soluções robustas de backend, a Leandro Sibim também se especializa no desenvolvimento de
+            plataformas científicas para pesquisa e análise de dados complexos. A empresa tem trabalhado com diversas
+            universidades, centros de pesquisa e empresas do setor farmacêutico e biotecnológico, criando ferramentas
+            que ajudam a impulsionar descobertas científicas e inovações tecnológicas.<br>
+            <br>
+            Big Data e Análise de Dados<br>
+            <br>
+            Em um mundo onde os dados são cada vez mais abundantes, a Leandro Sibim tem uma vasta experiência no
+            processamento e análise de grandes volumes de dados (Big Data). Usando tecnologias como Hadoop, Spark,
+            Python e R, a empresa oferece soluções para transformar dados não estruturados em informações valiosas que
+            podem ser utilizadas para decisões estratégicas. Em áreas científicas como a genômica, farmacologia e
+            física, a capacidade de analisar grandes quantidades de dados rapidamente pode acelerar a descoberta de
+            novas terapias ou o entendimento de fenômenos naturais.<br>
+            <br>
+            Inteligência Artificial e Aprendizado de Máquina<br>
+            <br>
+            A integração de inteligência artificial e aprendizado de máquina é um diferencial da Leandro Sibim. A
+            empresa tem implementado algoritmos avançados para resolver problemas específicos em pesquisa científica.
+            Isso inclui a utilização de redes neurais profundas (deep learning) para identificar padrões complexos em
+            dados biológicos ou genômicos, ou a criação de modelos preditivos que ajudam a antecipar resultados em
+            pesquisas clínicas.<br>
+            <br>
+            Além disso, a empresa investe em tecnologias de processamento de linguagem natural (NLP) para a análise de
+            grandes volumes de textos científicos, permitindo que pesquisadores encontrem rapidamente insights e
+            relacionamentos importantes nas publicações acadêmicas.<br>
+            <br>
+            Cloud Computing e Infraestrutura Científica<br>
+            <br>
+            A cloud computing tem sido uma das principais aliadas para o desenvolvimento de soluções científicas da
+            Leandro Sibim. Utilizando plataformas como AWS, Google Cloud e Microsoft Azure, a empresa cria ambientes de
+            computação altamente eficientes, permitindo que pesquisadores realizem simulações e cálculos complexos sem
+            precisar de infraestrutura física cara. As soluções de cloud-based computing oferecem escalabilidade,
+            flexibilidade e desempenho, permitindo que as equipes científicas se concentrem em suas pesquisas e não em
+            questões técnicas.<br>
+            <br>
+            Colaboração com a Comunidade Científica<br>
+            <br>
+            A Leandro Sibim acredita firmemente no poder da colaboração e do compartilhamento de conhecimento. Como
+            parte de seu compromisso com a inovação científica, a empresa tem estabelecido parcerias com universidades e
+            centros de pesquisa para desenvolver projetos conjuntos. Além disso, a empresa promove eventos, hackathons e
+            workshops para fomentar o desenvolvimento de novas soluções tecnológicas que atendam às necessidades da
+            comunidade científica.<br>
+            <br>
+            O modelo colaborativo também se estende aos clientes, onde a empresa trabalha lado a lado com suas equipes
+            de pesquisa e TI para entender profundamente os desafios enfrentados, e então desenvolver soluções sob
+            medida que atendam às suas necessidades específicas. Esse engajamento próximo garante que as soluções não
+            sejam apenas tecnicamente competentes, mas também altamente eficazes para os objetivos de pesquisa.<br>
+            <br>
+            O Futuro da Leandro Sibim<br>
+            <br>
+            O futuro da Leandro Sibim é brilhante. Com o crescente volume de dados, a demanda por soluções de backend
+            eficientes e plataformas científicas poderosas, a empresa está posicionada para continuar sua jornada de
+            inovação. A equipe de desenvolvimento está sempre atenta às novas tendências e tecnologias, como computação
+            quântica, blockchain e realidade aumentada, para garantir que seus clientes e parceiros tenham acesso às
+            ferramentas mais modernas para resolver os problemas do amanhã.<br>
+            <br>
+            A Leandro Sibim não é apenas uma empresa de tecnologia, mas um verdadeiro parceiro estratégico para negócios
+            e cientistas que buscam transformar seus dados em insights valiosos e suas pesquisas em descobertas
+            significativas. A empresa segue seu compromisso de entregar soluções que não só atendem às expectativas dos
+            clientes, mas que também ajudam a mudar o mundo por meio da ciência e da inovação tecnológica.<br>
+            <br>
+            Em resumo, a Leandro Sibim é uma empresa que une o poder da programação backend de alta performance com a
+            sofisticação da pesquisa científica, criando soluções que estão moldando o futuro da tecnologia e da
+            ciência.<br>
+        </p>
+    </nav>
+    <section id="contact">
+        <h2>Contato</h2>
+        <ul>
+            <il>
+                (14)99717-3176
+            </il>
+            <il>
+                <a style="color: white" href="https://leandros123456.github.io/portfolio/github.com/defmc"
+                    target="_blank">Github</a>
+            </il>
+            <il>
+                <a style="color: white" href="https://leandros123456.github.io/portfolio/whatsapp.com"
+                    target="_blank">Whatsapp</a>
+            </il>
+            <il>
+                <a style="color: white" href="contact.html" target="_blank">Contatar</a>
+            </il>
+        </ul>
+        <li>
+            <p>Rua Professora Maria José Ferreira, 100 - Bairro das Crianças - Ourinhos/SP CEP:19910-075</p>
+        </li>
+
+    </section>
+    <footer>
+        <hr>
+        <p style="text-align: center">© 2024 Leandro Sibim. Todos os direitos reservados.
+        </p>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

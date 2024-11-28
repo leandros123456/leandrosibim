@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <title>Leandro Sibim</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font: bold 14px/1.4 "Times New Roman";
+            background: #000;
+            color: white;
+        }
+
+        nav {
+            background-color: black;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            width: 600px;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            display: inline-block;
+            padding: 15px 20px;
+        }
+
+        nav li {
+            display: table-cell;
+            position: relative;
+            padding: 15px 0;
+        }
+
+        nav a:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: #fff;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+
+        nav a:hover:after {
+            width: 100%;
+            left: 0;
+        }
+
+        @media screen and (max-height: 300px) {
+            ul {
+                margin-top: 40px;
+            }
+        }
+
+        .banner {
+            display: flex;
+            flex-direction: row;
+            background-image: url('https://wallpapercave.com/wp/wp4850097.jpg');
+            background-size: cover;
+        }
+
+        .banner div h2,
+        h5 {
+            color: white;
+        }
+
+        .banner div {
+            flex-grow: 3;
+            display: flex;
+            flex-direction: column;
+            width: 350vh;
+        }
+
+        span {
+            color: white;
+        }
+
+        .showcase-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 300px;
+            margin: 20px;
+            background-color: black;
+            border-radius: 10px;
+            border: 5px solid white;
+            text-align: center;
+        }
+
+        .showcase-box h3 {
+            text-align: center;
+        }
+
+        #projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .showcase-box span {
+            text-align: justify;
+        }
+
+        #contact ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        section ul li a {
+            color: white;
+            font-size: 10rem;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#tools">Ferramentas utilizadas</a></li>
+            <li><a href="#section2">Projetos desenvolvidos</a></li>
+            <li><a href="contact.html">Contato</a></li>
+            <li><a href="services.html">Serviços</a></li>
+            <li><a href="about.html">Sobre nós</a></li>
+        </ul>
+        <p>
+            Leandro Sibim: A Diversidade Tecnológica e a Inovação com Python, Haskell, Rust, C, C++, Bash, Javascript,
+            C# e Assembly<br>
+            <br>
+            A Leandro Sibim é uma empresa de desenvolvimento de software que se destaca pela sua abordagem inovadora
+            e pela flexibilidade no uso de múltiplas linguagens de programação para criar soluções personalizadas e de
+            alta performance. Seu portfólio abrange uma ampla gama de tecnologias, com foco no desenvolvimento de
+            sistemas complexos, aplicativos de alto desempenho e soluções criativas para empresas que buscam resultados
+            concretos em diversas áreas da tecnologia.<br>
+            <br>
+            Ao invés de se limitar a uma ou duas linguagens populares, a Leandro Sibim adota uma estratégia
+            multilinguagem, utilizando ferramentas e linguagens de programação que melhor atendem aos requisitos de cada
+            projeto. O uso de Python, Haskell, Rust, C, C++, Bash, Javascript, C# e
+            Assembly permite à empresa trabalhar em uma variedade de cenários, desde sistemas de alto desempenho e
+            otimização de baixo nível até aplicações web interativas e de fácil manutenção. Cada uma dessas linguagens
+            tem um papel específico dentro do portfólio da empresa, garantindo a melhor solução para os desafios
+            tecnológicos que seus clientes enfrentam.<br>
+            <br>
+            A Diversidade das Linguagens de Programação<br>
+            <br>
+            Python: Flexibilidade e Velocidade no Desenvolvimento<br>
+            <br>
+            O Python é uma das linguagens mais utilizadas pela Leandro Sibim, especialmente quando se trata de
+            prototipagem rápida, automação de processos e análise de dados. Conhecido pela sua sintaxe
+            simples e legível, Python é ideal para projetos onde a rapidez de desenvolvimento e a fácil manutenção são
+            cruciais. A empresa utiliza Python em uma ampla variedade de cenários, como desenvolvimento de APIs,
+            aplicações web, análise de grandes volumes de dados e inteligência artificial. Seu ecossistema de
+            bibliotecas, como NumPy, Pandas, TensorFlow e Django, permite à empresa oferecer soluções
+            robustas e escaláveis para clientes de diferentes setores.<br>
+            <br>
+            Haskell: Confiabilidade e Imutabilidade para Projetos Complexos<br>
+            <br>
+            Em projetos que exigem alta confiabilidade, segurança e manutenibilidade a longo prazo, a
+            Leandro Sibim utiliza Haskell, uma linguagem funcional pura que oferece um controle rigoroso de tipos e
+            imutabilidade. Haskell é escolhida para sistemas em que a precisão dos cálculos e a segurança do código são
+            essenciais, como sistemas bancários, financeiros ou de controle de processos industriais. Sua capacidade de
+            criar código conciso e eficiente torna-a ideal para problemas complexos onde o desempenho e a correção
+            matemática são fatores determinantes.<br>
+            <br>
+            Rust: Performance e Segurança para Sistemas de Alto Desempenho<br>
+            <br>
+            A Rust é outra linguagem-chave no portfólio da Leandro Sibim, especialmente quando o foco é
+            performance e segurança de memória. Com sua sintaxe moderna e características avançadas de controle
+            de memória sem a necessidade de um coletor de lixo, Rust é escolhida para o desenvolvimento de sistemas de
+            baixo nível, aplicações de alto desempenho e software embarcado. Sua capacidade de evitar bugs
+            relacionados à memória, como vazamentos ou falhas de segmentação, a torna uma opção valiosa em sistemas
+            críticos, como motores de jogos, sistemas de processamento de dados em tempo real ou aplicações que
+            necessitam de uma execução otimizada, como redes e servidores de alta carga.<br>
+            <br>
+            C e C++: Desempenho Máximo e Controle de Hardware<br>
+            <br>
+            As linguagens C e C++ são fundamentais nos projetos da Leandro Sibim onde o desempenho máximo e
+            o controle de hardware são necessários. Usadas principalmente em sistemas embarcados, aplicações
+            de baixo nível e softwares que exigem alta performance, essas linguagens permitem que a empresa crie
+            soluções altamente eficientes para controle de dispositivos, desenvolvimento de drivers e otimização de
+            algoritmos críticos. A Leandro Sibim também utiliza C e C++ para criar aplicações de tempo real, como
+            sistemas de comunicação e controle de máquinas industriais, onde a latência e a utilização eficiente dos
+            recursos de hardware são cruciais.<br>
+            <br>
+            Bash: Automação e Eficiência no Gerenciamento de Sistemas<br>
+            <br>
+            O Bash é uma ferramenta indispensável para a automação de tarefas administrativas e o gerenciamento
+            de sistemas dentro da infraestrutura de TI da Leandro Sibim. Scripts Bash são utilizados para orquestrar
+            processos no servidor, gerenciar ambientes de desenvolvimento e automatizar builds e deploys. A
+            capacidade do Bash de interagir diretamente com o sistema operacional torna-o ideal para tarefas que
+            envolvem manipulação de arquivos, execução de comandos em lote e administração de servidores. Também é usado
+            para a automação de processos de testes, monitoramento de performance e integração contínua, garantindo
+            que os sistemas sejam mantidos de maneira eficiente e livre de falhas.<br>
+            <br>
+            Javascript: Dinamicidade para Aplicações Web e Front-end<br>
+            <br>
+            Em projetos voltados para o desenvolvimento web, a Leandro Sibim utiliza JavaScript para criar
+            interfaces de usuário dinâmicas e interativas. A empresa emprega frameworks modernos, como React,
+            Vue.js e Angular, para construir aplicações web modernas e responsivas, que oferecem uma
+            experiência fluida e rápida ao usuário final. O uso de JavaScript permite que a empresa atenda a uma ampla
+            gama de necessidades, desde o desenvolvimento de front-ends simples até sistemas complexos de gestão
+            empresarial ou plataformas de e-commerce, tudo com uma interface moderna e altamente interativa.<br>
+            <br>
+            C#: Soluções Corporativas e Desktop<br>
+            <br>
+            A Leandro Sibim também adota C# em projetos voltados para o desenvolvimento de aplicações
+            corporativas e software para desktop. Com sua forte integração ao .NET Framework, C# é a escolha
+            ideal para a criação de aplicações empresariais robustas e de alta escalabilidade. Além disso, a
+            empresa utiliza C# no desenvolvimento de sistemas para Windows, aproveitando a sua compatibilidade
+            nativa com o ecossistema Microsoft, e para criar aplicações de backend em plataformas como o
+            ASP.NET.<br>
+            <br>
+            Assembly: Otimização de Baixo Nível e Desempenho Crítico<br>
+            <br>
+            Por fim, a utilização de Assembly pela Leandro Sibim é um diferencial significativo em projetos que
+            exigem controle absoluto sobre o hardware e otimização de baixo nível. A empresa recorre ao Assembly
+            para otimizar código crítico, como rotinas de manipulação de gráficos em tempo real, controle de sistemas
+            embarcados e otimizações de desempenho em softwares que precisam operar de forma extremamente eficiente, com
+            o menor uso possível de recursos. Embora o uso de Assembly seja cada vez mais raro, ele ainda tem seu espaço
+            em projetos especializados, onde a eficiência e o controle de cada ciclo de CPU são determinantes.<br>
+            <br>
+            Um Portfólio Multidisciplinar para Soluções Complexas<br>
+            <br>
+            A Leandro Sibim não se limita a uma única abordagem tecnológica, mas sim adota um portfólio
+            diversificado que permite à empresa ser ágil e eficiente em uma variedade de contextos. A habilidade de
+            trabalhar com diferentes linguagens oferece uma flexibilidade estratégica que permite à empresa resolver
+            problemas de diferentes escalas, desde a construção de sistemas corporativos até o desenvolvimento de
+            soluções tecnológicas de ponta.<br>
+            <br>
+            Essa diversidade também reflete um compromisso com a inovação contínua, onde a empresa investe em novas
+            linguagens e tecnologias conforme elas surgem, garantindo sempre as melhores práticas e soluções de
+            vanguarda para seus clientes.<br>
+            <br>
+            Seja em sistemas de alta performance, aplicações de inteligência artificial, sistemas de backend
+            robustos, desenvolvimento web ou até mesmo em soluções embarcadas, a Leandro Sibim é uma empresa
+            que se adapta às necessidades de seus clientes, utilizando as ferramentas e linguagens mais adequadas para
+            cada cenário.<br>
+        </p>
+    </nav>
+    <section id="contact">
+        <h2>Contato</h2>
+        <ul>
+            <il>
+                (14)99717-3176
+            </il>
+            <il>
+                <a style="color: white" href="https://leandros123456.github.io/portfolio/github.com/defmc"
+                    target="_blank">Github</a>
+            </il>
+            <il>
+                <a style="color: white" href="https://leandros123456.github.io/portfolio/whatsapp.com"
+                    target="_blank">Whatsapp</a>
+            </il>
+            <il>
+                <a style="color: white" href="contact.html" target="_blank">Contatar</a>
+            </il>
+        </ul>
+        <li>
+            <p>Rua Professora Maria José Ferreira, 100 - Bairro das Crianças - Ourinhos/SP CEP:19910-075</p>
+        </li>
+
+    </section>
+    <footer>
+        <hr>
+        <p style="text-align: center">© 2024 Leandro Sibim. Todos os direitos reservados.
+        </p>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>
